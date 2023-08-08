@@ -1,0 +1,32 @@
+ <!-- Criteo Loader -->
+<script type="text/javascript" src="https://static.criteo.net/js/ld/publishertag.js" async></script>
+<!-- Initialize Criteo Object -->
+<script>
+window.Criteo = window.Criteo || {};
+window.Criteo.events = window.Criteo.events || [];
+</script>
+<script type="text/javascript">
+    Criteo.events.push(function() {
+        var adUnits = {
+            placements: [{
+                slotId: "zone_258813",
+                zoneId: 258813
+            }]
+          }
+    Criteo.Passback.RequestBids(adUnits , 2000);
+    });
+    </script>
+    <div id="zone_258813"></div>
+    <script type="text/javascript">
+    Criteo.events.push(function() {
+        Criteo.Passback.RenderAd("zone_258813", function(){
+var width = "300", height = "250";
+var slotid = "zone_258813"; var div = document.getElementById(slotid);
+if (div) { var ifr = document.createElement('iframe'); ifr.setAttribute("id", slotid+"_iframe"), ifr.setAttribute("frameborder","0"), ifr.setAttribute("allowtransparency","true"), ifr.setAttribute("hspace","0"), ifr.setAttribute("marginwidth","0"), ifr.setAttribute("marginheight","0"), ifr.setAttribute("scrolling","no"), ifr.setAttribute("vspace","0"), ifr.setAttribute("width", "300"), ifr.setAttribute("height", "250");
+div.appendChild(ifr);
+var htmlcode = "<html><head></head><body><script type=\"text/javascript\" src=\"//ds.interworksmedia.co.kr/RealMedia/ads/adstream_jx.ads/www.donga.popup/donga_news@x21?RM_Exclude=criteo\"></scr"+"ipt></body></html>";
+var ifrd = ifr.contentWindow.document; ifrd.open(); ifrd.write(htmlcode); ifrd.close(); }
+
+        });
+     });
+</script>
